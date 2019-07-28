@@ -17,9 +17,14 @@ let text;
 //    separated by spaces, and store the string in the variable `text`.
 print('1st Loop:');
 text = '';
+i = 0;
 
 // Write 1st loop here:
-
+do {
+  text += i + ' ';
+  i++;
+}
+while(i <= 4);
 
 print(text); // Should print `0 1 2 3 4 `.
 
@@ -27,9 +32,14 @@ print(text); // Should print `0 1 2 3 4 `.
 //    separated by spaces, and store the string in the variable `text`.
 print('2nd Loop:');
 text = '';
+i = 1;
 
 // Write 2nd loop here:
-
+do {
+  text += i + ' ';
+  i++;
+}
+while(i <= 5);
 
 print(text); // Should print `1 2 3 4 5 `.
 
@@ -37,9 +47,14 @@ print(text); // Should print `1 2 3 4 5 `.
 //    separated by spaces, and store the string in the variable `text`.
 print('3rd Loop:');
 text = '';
+i = 5;
 
 // Write 3rd loop here:
-
+do {
+  text += i + ' ';
+  i--;
+}
+while(i >= 1);
 
 print(text); // Should print `5 4 3 2 1 `.
 
@@ -47,9 +62,14 @@ print(text); // Should print `5 4 3 2 1 `.
 //    The numbers should be separated by spaces, and stored in the variable `text`.
 print('4th Loop:');
 text = '';
+i = 5;
 
 // Write 4th loop here:
-
+do {
+  text += i + ' ';
+  i += 5;
+}
+while(i <= 50);
 
 print(text); // Should print `5 10 15 20 25 30 35 40 45 50 `.
 
@@ -59,9 +79,18 @@ print(text); // Should print `5 10 15 20 25 30 35 40 45 50 `.
 // will be a random length.
 print('5th Loop:');
 text = '';
+i = Math.floor(Math.random() * 9);
 
 // Write 5th loop here:
+do {
+  text += i + ' ';
+  i = Math.floor(Math.random() * 9);
+}
+while(i !== 8);
 
+if (i == 8) {
+  text += i;
+}
 
 print(text); // Should print something like `4 7 2 9 8 `, or `9 0 8 ` or `8 `.
 
