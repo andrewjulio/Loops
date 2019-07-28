@@ -79,18 +79,13 @@ print(text); // Should print `5 10 15 20 25 30 35 40 45 50 `.
 // will be a random length.
 print('5th Loop:');
 text = '';
-i = Math.floor(Math.random() * 9);
 
 // Write 5th loop here:
 do {
+  i = Math.floor(Math.random() * 10);
   text += i + ' ';
-  i = Math.floor(Math.random() * 9);
 }
 while(i !== 8);
-
-if (i == 8) {
-  text += i;
-}
 
 print(text); // Should print something like `4 7 2 9 8 `, or `9 0 8 ` or `8 `.
 
